@@ -64,7 +64,7 @@ const Customiser = () => {
       //call our backend to generate an AI image !
       setGeneratingImg(true);
 
-      const response = await fetch('https://generator-ai-threejs.onrender.com/',
+      const response = await fetch('https://generator-ai-threejs.onrender.com/api/v1/dalle',
       {
         method: 'POST',
         headers: {
